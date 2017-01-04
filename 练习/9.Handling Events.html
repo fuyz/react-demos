@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handling Events</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="root"></div>
+<div id="d2"></div>
+<div id="d3"></div>
+
+<script type="text/babel">
+    class Toggle extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {isToggleOn: true};
+            // This binding is necessary to make `this` work in the callback
+            this.handleClick = this.handleClick.bind(this);
+        }
+        handleClick() {
+            console.info(this);
+            this.setState((prevState,props,s) => {
+                console.log(prevState,props,s);
+                return{isToggleOn: !prevState.isToggleOn};
+            });
+        }
+        render() {
+            return (
+                    <button onClick={this.handleClick}>
+                        {this.state.isToggleOn ? 'ON' : 'OFF'}
+                    </button>
+            );
+        }
+    }
+    ReactDOM.render(
+            <Toggle />,
+        document.getElementById('root')
+    );
+
+    //方法一：解决this问题
+    class LoggingButton1 extends React.Component {
+        // This syntax ensures `this` is bound within handleClick.
+        // Warning: this is *experimental* syntax.这是*实验*的语法。
+//        handleClick = () => {
+//            console.log('this is:', this);
+//        };
+        render() {
+            return (
+                    <button onClick={this.handleClick}>
+                        Click me
+                    </button>
+            );
+        }
+    }
+    ReactDOM.render(
+            <LoggingButton1 />,
+        document.getElementById('d2')
+    );
+
+    //方法二：解决this问题
+    class LoggingButton2 extends React.Component {
+        constructor(props){
+            super(props);
+            this.state = {isToggleOn: true};
+        }
+        handleClick() {
+            console.log('this is:', this);
+            this.setState(()=>({isToggleOn:!this.state.isToggleOn}))
+        }
+        render() {
+            // This syntax ensures `this` is bound within handleClick
+            return (
+                    <button onClick={(e) => this.handleClick(e)}>
+                        Click me, {this.state.isToggleOn ? 'Yes' : 'No'}
+                    </button>
+            );
+        }
+    }
+    ReactDOM.render(
+            <LoggingButton2 />,
+        document.getElementById('d3')
+    );
+
+</script>
+</body>
+</html>

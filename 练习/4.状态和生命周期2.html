@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状态和生命周期</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="d1"></div>
+<hr>
+<div id="d2"></div>
+<hr>
+<div id="d3"></div>
+
+<script type="text/babel">
+
+    //简单的渲染
+    function tick() {
+        const element = (
+                <div>
+                    <h1>Hello,world!</h1>
+                    <h2>It is {new Date().toLocaleTimeString()}.</h2>
+                </div>
+        );
+        ReactDOM.render(
+            element,
+            document.getElementById('d1')
+        );
+    }
+    setInterval(tick, 1000);
+
+    //封装组件的方法：
+    function Clock(props) {
+        return (
+            <div>
+                <h1>Hello, world!222</h1>
+                <h2>It is {props.date.toLocaleTimeString()}</h2>
+            </div>
+        );
+    }
+    function tick2() {
+        ReactDOM.render(
+            <Clock date={new Date()}/>,
+            document.getElementById('d2')
+        )
+    }
+    setInterval(tick2, 1000);
+
+    //通过类定义组件的方法：
+    class Clock2 extends React.Component{
+        constructor(props){
+            super(props);
+            this.state = {date: new Date()};
+        }
+        componentDidMount(){
+            console.log(this);  //Clock2
+            this.timerID = setInterval(
+                () =>{this.tick();console.log(this);/*Clock2*/},
+                1000
+            )
+        }
+        componentWillUnmount(){
+            clearInterval(this.timerID);
+        }
+        tick(){
+            this.setState({
+                date: new Date()
+            });
+        }
+        render(){
+            return (
+                <div>
+                    <h1>Hello, World!</h1>
+                    <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+                </div>
+            );
+        }
+    }
+    ReactDOM.render(
+        <Clock2 />,
+        document.getElementById('d3')
+    );
+
+
+</script>
+</body>
+</html>
