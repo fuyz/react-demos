@@ -21,31 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="4.状态和生命周期2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/练习/4.状态和生命周期2.html">
+      <file leaf-file-name="12.form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/练习/12.form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="51" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="51" />
+              <caret line="7" column="51" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="9.Handling Events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/练习/9.Handling Events.html">
+      <file leaf-file-name="13.Lifting State Up(状态提升).html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/练习/13.Lifting State Up(状态提升).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10.conditional rendering.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/练习/10.conditional rendering.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="-729">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,6 +60,9 @@
         <option value="$PROJECT_DIR$/练习/4.状态和生命周期2.html" />
         <option value="$PROJECT_DIR$/练习/9.Handling Events.html" />
         <option value="$PROJECT_DIR$/练习/10.conditional rendering.html" />
+        <option value="$PROJECT_DIR$/练习/11.Lists and Keys.html" />
+        <option value="$PROJECT_DIR$/练习/12.form.html" />
+        <option value="$PROJECT_DIR$/练习/13.Lifting State Up(状态提升).html" />
       </list>
     </option>
   </component>
@@ -80,9 +73,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="462" />
-    <option name="y" value="19" />
-    <option name="width" value="847" />
+    <option name="x" value="435" />
+    <option name="y" value="15" />
+    <option name="width" value="911" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -103,7 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -132,6 +124,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -216,17 +209,18 @@
       <updated>1483513829043</updated>
       <workItem from="1483513847947" duration="11868000" />
       <workItem from="1483534006230" duration="3258000" />
+      <workItem from="1483618172791" duration="4791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15126000" />
+    <option name="totallyTimeSpent" value="19917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="462" y="19" width="847" height="744" extended-state="0" />
+    <frame x="435" y="15" width="911" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24856816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -255,6 +249,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/练习/4.状态和生命周期2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/9.Handling Events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/10.conditional rendering.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/练习/4.状态和生命周期2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -316,16 +334,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/练习/9.Handling Events.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="825">
+          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/练习/10.conditional rendering.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/11.Lists and Keys.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/5.表单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/12.form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/13.Lifting State Up(状态提升).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-729">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>

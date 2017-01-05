@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="d1"></div>
+<hr>
+<div id="d2"></div>
+<hr>
+<div id="d3"></div>
+
+<script type="text/babel">
+
+    const numbers = [1, 2, 3, 4, 5];
+    const listItems = numbers.map(
+        (number) => <li>list{number}</li>
+    );
+    ReactDOM.render(
+            <ul>{listItems}</ul>,
+        document.getElementById('d1')
+    );
+
+
+    function MyComponent(props) {
+        const listItems = props.number.map((number,index) =>
+                <li key={number.toString()}>
+                    {number.id +','+ index +','+ number}
+                </li>
+        );
+        return (
+                <ul>{listItems}</ul>
+        );
+    }
+    const numbers2 = [11, 22, 33, 44, 55];
+    ReactDOM.render(
+        <MyComponent number={numbers2}/>,
+        document.getElementById('d2')
+    );
+
+
+
+    function Blog(props) {
+        const sidebar = (
+                <ul>
+                    {props.posts.map((post) =>
+                            <li key={post.id}>
+                                {post.title}
+                            </li>
+                    )}
+                </ul>
+        );
+        const content = props.posts.map((post) =>
+                <div key={post.id}>
+                    <h3>{post.title}</h3>
+                    <p>{post.content}</p>
+                </div>
+        );
+        return (
+                <div>
+                    {sidebar}
+                    <hr />
+                    {content}
+                </div>
+        );
+    }
+
+    const posts = [
+        {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+        {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+    ];
+    ReactDOM.render(
+            <Blog posts={posts} />,
+        document.getElementById('d3')
+    );
+
+</script>
+
+</body>
+</html>
