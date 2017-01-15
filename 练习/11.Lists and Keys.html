@@ -19,7 +19,7 @@
 
     const numbers = [1, 2, 3, 4, 5];
     const listItems = numbers.map(
-        (number) => <li>list{number}</li>
+        (number) => <li key={number}>list{number}</li>
     );
     ReactDOM.render(
             <ul>{listItems}</ul>,
