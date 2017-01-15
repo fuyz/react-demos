@@ -56,9 +56,9 @@
             this.state = {date: new Date()};
         }
         componentDidMount(){
-            console.log(this);  //Clock2
+            console.log('1:'+ this);  //Clock2
             this.timerID = setInterval(
-                () =>{this.tick();console.log(this);/*Clock2*/},
+                () =>{this.tick();console.log('2:'+ this);/*Clock2*/},
                 1000
             )
         }

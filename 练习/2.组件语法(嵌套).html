@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+</head>
+<body>
+
+<div id="d1"></div>
+
+<script type="text/babel">
+
+    const Mycomponent = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <h1>hello world !</h1>
+                        <Mycomponent2/>
+                    </div>
+            )
+        }
+    });
+    const Mycomponent2 = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <h3>code can change the world!</h3>
+                        <Mycomponent3/>
+                    </div>
+            )
+        }
+    });
+    const Mycomponent3 = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <p>because code is magical!</p>
+                    </div>
+            )
+        }
+    });
+
+    ReactDOM.render(
+           <Mycomponent/>,
+        document.getElementById('d1')
+    );
+
+</script>
+</body>
+</html>
